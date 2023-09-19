@@ -1,0 +1,78 @@
+
+<head>
+  <style>
+
+    #header nav {
+      width: 100%;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .fork {
+      margin-bottom: 10px;
+    }
+
+    .fork a, .title a {
+      display: block;
+      padding: 15px 10px;
+      color: white;
+      border-radius: 15px;
+      /* border: 1px solid #2c3e50;  */
+      margin-bottom: 10px; 
+      /* border-color: #2c3e50;  */
+      font-size: 14px;
+      font-weight: normal;
+      background-color: #007bff;
+      transition: background-color 0.3s;
+    }
+
+    .fork a:hover, .title a:hover {
+      background-color: #0056b3; 
+      
+    }
+
+    @keyframes Fade {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    body {
+      animation: Fade ease 1s;
+    }
+
+  </style>
+
+</head>
+<body>
+  <header class="site-header">
+    <div id="header">
+      <nav>
+        <ul>
+          <li class="fork">
+            <a href="{{site.baseurl}}/">Home</a>
+          </li>
+          <li class="fork">
+            <a href="{{site.baseurl}}/compsci">CompSci</a>
+          </li>
+          <li class="fork">
+            <a href="{{site.baseurl}}/blogs">Blogs</a>
+          </li>
+          <li class="title">
+            <a href="{{site.baseurl}}/help">Help</a>
+          </li>
+          <li class="title">
+            <a href="{{ site.github.repository_url }}#readme">View On GitHub</a>
+          </li>
+        </ul>
+      </nav>
+    </div><!-- end header -->
+  </header>
+</body>
